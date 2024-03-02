@@ -24,6 +24,8 @@ const Input: React.FC<InputProps> = ({
   register,
   errors,
 }) => {
+  console.log("input :"+disabled);
+  
   return (
     <div className="w-full relative">
       {formatPrice && (
@@ -70,7 +72,7 @@ const Input: React.FC<InputProps> = ({
         peer-placeholder-shown:translate-y-0 
         peer-focus:scale-75 
         peer-focus:-translate-y-6
-        ${errors[id] ? 'text-rose-500' : 'text-zinc-400'}
+        ${errors[id] ? 'text-rose-500' : 'text-sky-500'}
       `}>
         {label}
       </label>
